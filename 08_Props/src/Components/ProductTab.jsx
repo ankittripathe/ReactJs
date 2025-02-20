@@ -1,7 +1,7 @@
 import React from "react";
 import Product from "./Product";
 
-const ProductTab = () => {
+const ProductTab = (props) => {
   return (
     <div>
       <Product title ='phone' price = {30000}/>  

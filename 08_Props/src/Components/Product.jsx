@@ -4,8 +4,8 @@ import "./Product.css";
 const Product = (props) => {
   return (
     <div className="product">
-      <h3>{props.title}</h3>
-      <h5>Price : {props.price}</h5>
+      <h1>{props.title}</h1>
+      <h4>Price : {props.price}</h4>
     </div>
   );
 };
