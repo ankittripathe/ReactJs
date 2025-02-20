@@ -1,13 +1,12 @@
-import React from 'react'
-import ProductTab from './Components/ProductTab'
-
+import React from "react";
+import ProductTab from "./Components/ProductTab";
 
 const App = () => {
   return (
     <div>
-      <ProductTab/>
+      <ProductTab />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
