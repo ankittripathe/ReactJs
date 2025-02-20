@@ -1,16 +1,15 @@
 import React from "react";
 import Title from "./Components/Title";
 
-function Description() {
-  return <h3>I am Description!</h3>;
-}
-
 const App = () => {
   return (
     <>
-      <h1>This is app components</h1>
+      <h1>
+        Fragment lets you group multiple elements without adding extra nodes to
+        the DOM.
+      </h1>
+
       <Title />
-      <Description />
     </>
   );
 };
