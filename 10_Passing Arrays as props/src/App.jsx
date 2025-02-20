@@ -7,6 +7,7 @@ const App = () => {
   return (
     <div>
       <Product techStack={items} />
+
       <Product techStack={["Materail UI", "BootStarps", "Tailwind"]} />
     </div>
   );
