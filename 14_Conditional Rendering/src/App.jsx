@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import Greeting from './Components/Greeting';
+import React, { useState } from "react";
+import Greeting from "./Components/Greeting";
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
@@ -16,4 +16,3 @@ const App = () => {
 };
 
 export default App;
-
