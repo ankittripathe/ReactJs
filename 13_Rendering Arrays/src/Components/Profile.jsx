@@ -1,11 +1,13 @@
 import React from "react";
 
 const Profile = ({ features }) => {
-  const list = features.map((item) => <li>{item}</li>);
-
   return (
     <div>
-      <h1>{list}</h1>
+      <h1>
+        {features.map((item) => (
+          <li>{item}</li>
+        ))}
+      </h1>
     </div>
   );
 };
