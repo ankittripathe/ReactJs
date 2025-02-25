@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import "./TodoList.css";
 
 const TodoList = () => {
-  const [todos, setTodos] = useState(["Sample Task"]);
+  const [todos, setTodos] = useState([]);
   const [newTodo, setNewTodo] = useState("");
 
   const updateTodoValueFromInput = (evt) => {
     setNewTodo(evt.target.value);
-  };
+  }
 
   const addNewTaskByBtn = () => {
     const trimmedTodo = newTodo.trim(); // Remove leading/trailing spaces
