@@ -4,7 +4,7 @@ import WeatherApp from "./Components/WeatherApp";
 const App = () => {
   return (
     <>
-     <WeatherApp/>
+      <WeatherApp />
     </>
   );
 };

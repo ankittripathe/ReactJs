@@ -7,7 +7,7 @@ import weather_image from "../assets/weather_image.avif";
 
 const InfoBox = ({ info }) => {
   return (
-    <div style={{textAlign:'center'}}>
+    <div style={{ textAlign: "center" }}>
       <Card sx={{ maxWidth: 345 }}>
         <CardMedia
           sx={{ height: 150 }}
