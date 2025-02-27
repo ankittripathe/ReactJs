@@ -24,14 +24,23 @@ const InfoBox = ({ info }) => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            {info.city}
-            {info.humidity > 80 ? (
-              <ThunderstormIcon />
-            ) : info.temp > 18 ? (
-              <WbSunnyIcon />
-            ) : (
-              <AcUnitIcon />
-            )}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: "10px",
+              }}
+            >
+              <span>{info.city}</span>
+              {info.humidity > 80 ? (
+                <ThunderstormIcon sx={{ color: "blue", fontSize: "2rem" }} />
+              ) : info.temp > 18 ? (
+                <WbSunnyIcon sx={{ color: "orangered", fontSize: "2rem" }} />
+              ) : (
+                <AcUnitIcon sx={{ color: "lightblue", fontSize: "2rem" }} />
+              )}
+            </div>
           </Typography>
 
           <Typography variant="body2" color="text.secondary" component={"span"}>
