@@ -13,14 +13,14 @@ const WeatherApp = () => {
     weather: "haze",
   });
 
-  // const updateInfo = (newInfo) =>{
-  //   setWeatherInfo(newInfo)
-  // }
+  const updateInfo = (newInfo) => {
+    setWeatherInfo(newInfo);
+  };
 
   return (
     <div style={{ textAlign: "center" }}>
       <h1>Weather App</h1>
-      <Searchbox />
+      <Searchbox updateInformation={updateInfo} />
       <InfoBox info={weatherInfo} />/
     </div>
   );

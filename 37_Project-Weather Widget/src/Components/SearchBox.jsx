@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
-const SearchBox = () => {
+const SearchBox = ({updateInformation}) => {
   const [city, setCity] = useState("");
 
   const API_URL = "https://api.openweathermap.org/data/2.5/weather";
@@ -25,6 +25,7 @@ const SearchBox = () => {
       weather: jsonResponse.weather[0].description,
     };
     console.log(result);
+    return result
   };
 
   // (2) InputChanges
@@ -33,11 +34,12 @@ const SearchBox = () => {
   };
 
   // (3) submitHandler
-  const handleSubmit = (evt) => {
+  const handleSubmit = async (evt) => {
     evt.preventDefault();
     console.log(city);
     setCity("");
-    getWeatherInfo();
+    let newInfo = await getWeatherInfo();
+    updateInformation(newInfo)
   };
 
   return (
