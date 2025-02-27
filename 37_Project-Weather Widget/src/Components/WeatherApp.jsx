@@ -3,8 +3,9 @@ import Searchbox from "./SearchBox";
 import InfoBox from "./InfoBox";
 
 const WeatherApp = () => {
+  // (1) State to store weather information
   const [weatherInfo, setWeatherInfo] = useState({
-    city: "delhi",
+    city: "Wonderland",
     temp: 25.05,
     tempMin: 25.04,
     tempMax: 25.05,
@@ -13,15 +14,16 @@ const WeatherApp = () => {
     weather: "haze",
   });
 
+  // (2) Function to update weather information when a new city is searched
   const updateInfo = (newInfo) => {
-    setWeatherInfo(newInfo);
+    setWeatherInfo(newInfo); // Update state with new weather data
   };
 
   return (
     <div style={{ textAlign: "center" }}>
       <h1>Weather App</h1>
       <Searchbox updateInformation={updateInfo} />
-      <InfoBox info={weatherInfo} />/
+      <InfoBox info={weatherInfo} />
     </div>
   );
 };

@@ -12,7 +12,7 @@ const InfoBox = ({ info }) => {
         <CardMedia
           sx={{ height: 150 }}
           image={weather_image}
-          title="green iguana"
+          title="climate image"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
