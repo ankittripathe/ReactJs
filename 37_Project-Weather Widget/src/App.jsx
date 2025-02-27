@@ -1,10 +1,10 @@
 import React from "react";
-import SearchBox from "./Components/SearchBox";
+import WeatherApp from "./Components/WeatherApp";
 
 const App = () => {
   return (
     <>
-      <SearchBox />
+     <WeatherApp/>
     </>
   );
 };
